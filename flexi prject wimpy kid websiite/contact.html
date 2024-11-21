@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WIMPY KID</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Link to Bootstrap CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Accenture Logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contact.html"> Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" alt="cart" width="30px" height="30px" class="cart-icon"></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="container contact-container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <h2>Contact Information</h2>
+                            <address>
+                                <p><strong>WIMPY KIDS BOOKS</strong></p>
+                                <p>123 Main Street</p>
+                                <p>Pune, Maharashtra, ZIP</p>
+                                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                                <p>Phone: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+                            </address>
+                        </div>
+        
+                        <div class="map-container">
+                            <!-- Replace with your actual map embed code or iframe -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2dlongitude!3dlatitude!4dzoomlevel!5dMap" 
+                                width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <h2>Contact Us</h2>
+                            <form id="contactform" action="/submit-contact" method="POST">
+
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter your subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+                                <a href="contact.html" type="submit" value="submitform" class="btn btn-primary">Submit</button></a>
+                            </form>
+                            <script>
+                                const contactform = document.getElementById('contactform')
+                                contactform.addEventListener('submit', contactus)
+
+                               async function contactus(event) {
+                                    event.preventDefault()
+                                    const name = document.getElementById('name').value
+                                    const email = document.getElementById('email').value
+                                    const subject = document.getElementById('subject').value
+                                    const message = document.getElementById('message').value
+
+                                 const result =  await fetch('http://localhost:9999/api/contactus',{
+                                        method: 'POST',
+                                        headers: {
+                                            "Content-Type": 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        name,
+                                        email,
+                                        subject,
+                                        message
+                                    })
+                                    }).then((res) => res.json())
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <!-- Link to Bootstrap JS and jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!----------footer----------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Follow our instagram</h3>
+                    <p>Follow Wimpy Kid by reading all the editions.</p>
+                    <img src="app-store.png" width="20%">
+                    <img src="play-store.png" width="20%">
+                </div>
+                <div class="footer-col-2">
+                    <img src="">
+                    <p>Best Books for Children of all ages.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join us</li>
+                    </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                                    <li>Instagram</a></li>
+                                     <!-- Other list items here -->
+                                </ul>
+                        
+                    </div>
+                      </div>
+                      <hr>
+                      <p class="copyright">Copyright 2023 - Wimpy Kid</p>
+            </div>
+        </div>
+
+        <!------js for toggle menu------>
+        <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>                  
+
+</body>
+
+                    </html>

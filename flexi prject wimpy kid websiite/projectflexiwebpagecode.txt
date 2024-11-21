@@ -1,0 +1,183 @@
+                                        <br>
+					<hr>
+					<br>
+<div class="page-border">
+				
+					<h1 align="center"><u>MAHARASHTRA MANJHI KANYA BHAGYASHRE SCHEME</u>
+					</h1>
+
+     <br>
+      <hr>
+    <bR>
+
+
+<button class="collapsible"><h4>➢ INTRODUCTION</h4></button>
+<div class="content">
+  <p><h5>Since August 1st, 2017, the Women And Child Development Department of the Government of Maharashtra has been spearheading the implementation of the "Majhi Kanya Bhagyashree" initiative. This program, reflected in its name, is distinctly focused on empowering the girl child. In a country where regrettably, girls still face challenges like gender-based discrimination, honor-related violence, and early marriages, this initiative emerges as a progressive step. The Maharashtra government's decision to provide families with financial benefits after the birth of one or two daughters not only seeks to challenge societal norms but also aims to transform attitudes
+	
+    
+    </h5></p>
+	
+</div>
+
+<br>
+<button class="collapsible"><h4>➢ GOALS:
+</h4></button>
+<div class="content">
+	<ul>
+
+		<li><h5>Combat the gender inequality.
+			</h5></li>
+		<li><h5>Encourage the upbringing and education of girls.</h5></li>
+		<li><h5>Foresting a more equitable society.</h5></li>
+		<li><h5>Preventing gender selection.
+			</h5></li>
+		<li><h5>Ensuring safety of girls life.</h5></li>
+		<li><h5>Increasing the girl child birth rate.</h5></li>
+		<li><h5>Training of Panchayat Raj Institutions, Urban Local Committees and local level staff as key agents of social change Involve local communities, women's groups, women's self-help groups, and youth groups in this work.</h5></li>
+		<li><h5>Coordination of various organizations and service providers at district, taluka, and lower levels.</h5></li>
+
+	   </ul>
+    
+</div>
+
+<br>
+<button class="collapsible"><h4>➢ UNDER MAHARASHTRA MANJHI KANYA BHAGYASHREE SCHEME:</h4></button>
+<div class="content">
+	<p><h5>In April 2016, the Maharashtra government has started a new scheme for the girl child across the state namely Mazi Kanya Bhagyashree Scheme. After the Rupashree Prakalpa in West Bengal and Beti Bachao Beti Padhao scheme in Central, the Maharashtra state has taken an initiative to encourage the girl child education and quality of life of a woman by introducing this scheme. The said scheme has replaced the old scheme namely Sukanya, started in 2015.
+
+
+	</h5></p>
+    
+
+</div>
+
+<br>
+<button class="collapsible"><h4>➢ GOVERNMNET AGENCIES: 
+
+</h4></button>
+<div class="content">
+	<p><h5>MINISTRY OF WOMEN AND CHILD DEVELOPMENT(MoWCD):</h5></p>
+  <ul>
+    
+        <li><h5> To provide general guidance and support to States, Union Territories, Districts, and other stakeholders in the implementation of BBBP scheme.
+			
+			
+            </h4></li>
+        <li><h5>Monitor system administration</h4></li>
+        <li><h5> Collect best practices and initiatives to create value for girls
+        </h5></li>
+        <li><h5>  Establish training, sensitization, and awareness programs for officials, white collars, and stakeholders</h5></li>
+		<li><h5>Organize national advertising and information campaigns</h5></li>
+    	<li><h5>To develop a web-based management information system for reporting and monitoring</h5></li>
+       
+       
+      
+  </ul>
+
+</div>
+
+<br>
+<button class="collapsible"><h4>➢ BASIC IDEA:</h4></button>
+<div class="content">
+	<p><h5>Promoting the holistic progress of young girls, the Maharashtra government has introduced a commendable initiative offering financial support to economically disadvantaged families. This initiative aims to ensure the well-being of female children by addressing various crucial aspects. By providing financial assistance, the government seeks to tackle the prevalent issue of girls' education being cut short due to financial constraints. This initiative is anticipated to lead to a surge in the overall percentage of female education in the state, breaking down barriers to learning.
+
+	</h5></p>
+	<p><h5>Furthermore, the program targets the alarming gender gap in rural and remote areas by alleviating the perception of girls as burdens. With the financial aid offered, parents can now provide proper care and upbringing for their daughters, thereby contributing to the narrowing of the sex ratio gap.</h5></p>
+    <p><h5>The scheme outlines specific financial provisions based on family circumstances. Families with a single female child will receive a transfer of Rs. 50,000, while those with two female children will be entitled to Rs. 25,000 for each child, fostering the well-being of both daughters.
+
+	</h5></p>
+	<p><h5>The initiative also promotes family planning, incentivizing families to opt for tubectomy or vasectomy after the birth of their second child. This approach serves to curb the birth rate and ensure the scheme's effectiveness
+
+	</h5></p>
+	<p><h5>Beneficiaries can access the financial support when the female child reaches the legal age of 18 years. Moreover, families in need of financial assistance for the development and education of their daughters can withdraw accrued interest after the child turns 6 or completes 12 years of age.
+
+	</h5></p>
+	<p><h5>To streamline the process, all monetary aid will be directly transferred to beneficiaries' bank accounts, which must be opened in the name of the female child and the mother in state-run banks. This approach ensures transparency and accessibility while encouraging financial inclusion.</h5></p>
+</div>
+<br>
+<button class="collapsible"><h4>➢ BENEFITS OF THE SCHEME:
+
+</h4></button>
+<div class="content">
+	<p><h5>The following benefits are provided under the Maharashtra Manjhi Kanya Bhagyashree Scheme :-</h5></p>
+  <ul>
+    
+        <li><h5> One Girl Child: Rs.50,000 for a period of 18 years. </h4></li>
+        <li><h5>Two Girl Children: Rs. 25,000 each on the name of both the Girls.</h4></li>
+       <li><h5>  The families can withdraw accumulated interest after every six years.</h5></li>
+	
+       
+       
+      
+  </ul>
+
+</div>
+<br>
+<button class="collapsible"><h4>➢ ELIGIBILITY:
+
+</h4></button>
+<div class="content">
+	<p><h5>The following persons will be eligible under the Maharashtra Manjhi Kanya Bhagyashree Scheme :-</h5></p>
+  <ul>
+    
+        <li><h5> Permanent Resident of Mahrashtra , INDIA. </h4></li>
+        <li><h5>Girl children born after 1st August 2017.</h4></li>
+        <li><h5> Having annual income upto 7.5 Lakhs </h5></li>
+        <li><h5> After submission of Family Planning Certificate.</h5></li>
+
+       
+       
+      
+  </ul>
+
+</div>
+<br>
+<button class="collapsible"><h4>➢ Application Process:
+
+</h4></button>
+<div class="content">
+	
+  <ul>
+    
+        <li><h5> Eligible Person can apply in their  nearest Angandwadi Center.</h4></li>
+        <li><h5>Ask for the application form from Angandwadi worker.</h4></li>
+        <li><h5> Fill this application form by entering all the required information. </h5></li>
+        <li><h5> After that, attach all the required documents.</h5></li>
+		<li><h5>After filling all the information, the application form has to be submitted</h5></li>
+    	<li><h5>To develop a web-based management information system for reporting and monitoring</h5></li>
+		<li><h5> After the approval of the application form, the amount will be transferred to the applicant's bank account.</h5></li>
+
+       
+       
+      
+  </ul>
+
+</div>
+<br>
+<button class="collapsible"><h4>➢ DOCUMENTS REQUIRED:
+
+</h4></button>
+<div class="content">
+	<p><h5>Below is the list of documents that would be required at the time of registration under the scheme :-</h5></p>
+  <ul>
+    
+        <li><h5> Aadhaar Card. </h4></li>
+        <li><h5> Bank Account Details.</h4></li>
+        <li><h5> Address proof.</h5></li>
+        <li><h5>  Income certificate.</h5></li>
+    	<li><h5>Passport size photo.</h5></li>
+       
+       
+      
+  </ul>
+
+</div>
+
+
+
+
+
+
+
+</div>

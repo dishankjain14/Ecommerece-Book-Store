@@ -1,0 +1,331 @@
+import React, { useState } from 'react';
+import './App.css';
+
+function Menu({ toggleMenu }) {
+  return (
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+      <img src="cart.png" alt="cart" width="30px" height="30px" className="cart-icon" />
+      <img src="menu.png" className="menu-icon" onClick={toggleMenu} />
+    </nav>
+  );
+}
+
+function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <div className="App">
+      <div className="header">
+        <div className="container">
+          <div className="navbar">
+            <div className="logo">
+              <a href="index.html"><img src="logo.png" alt="Accenture Logo" width="125px" /></a>
+            </div>
+            <Menu toggleMenu={toggleMenu} />
+          </div>
+          <div className="row">
+            <div className="col-2">
+              <h1>"Discover, Laugh, <br /> and Relive<br />Your Wimpy Kid World!"</h1>
+              <p>"Welcome to the ultimate 'Diary of a Wimpy Kid' fan hub!<br />Explore characters, summaries, and more.<br /> Join us in celebrating this iconic series! Welcome to the Wimpy Kid community!"</p>
+              <a href="products.html" className="btn">Explore Now &#8594;</a>
+            </div>
+            <div className="col-2">
+              <img src="wimpy1.png" alt="Picture" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="categories">
+        <div className="small-c">
+          <div className="row">
+            <div className="col-3">
+              <img src="nobrainer.jpg" alt="describe" />
+            </div>
+            <div className="col-3">
+              <img src="diperoverload1.jpg" alt="describe2" />
+            </div>
+            <div className="col-3">
+              <img src="bigshot.jpg" alt="describe3" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="small-container">
+        {/* Featured Products */}
+        {/* Replace this section with your product data */}
+        {/* Featured Products */}
+<h2 className="title">Featured Products</h2>
+<div className="row">
+  <div className="col-4">
+    <div className="img">
+      <a href="product details.html"><img src="nobrainer.jpg" alt="No Brainer" /></a>
+    </div>
+    <h4>No Brainer</h4>
+    <div className="rating">
+      <i className="fa fa-star" aria-hidden="true"></i>
+      <i className="fa fa-star" aria-hidden="true"></i>
+      <i className="fa fa-star" aria-hidden="true"></i>
+      <i className="fa fa-star" aria-hidden="true"></i>
+      <i className="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <p>400.00</p>
+  </div>
+  <div className="col-4">
+          <div className="img">
+            <img src="thedeepend.png" alt="The Deepend" />
+          </div>
+          <h4>The Deepend</h4>
+          <div className="rating">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+        <div className="col-4">
+          <div className="img">
+            <img src="themeltdown.jpg" alt="The Meltdown" />
+          </div>
+          <h4>The Meltdown</h4>
+          <div className="rating">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-half-o"></i>
+            <i className="fa fa-star-o"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+        <div className="col-4">
+          <div className="img">
+            <img src="thegateway.jpg" alt="The Gateway" />
+          </div>
+          <h4>The Gateway</h4>
+          <div className="rating">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-half-o"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+      </div>
+      <div className="row">
+      <div className="small-container">
+      <h2 className="title">Latest Products</h2>
+      <div className="row">
+        <div className="col-4">
+          <div className="img">
+            <img src="nobrainer.jpg" alt="No Brainer" />
+          </div>
+          <h4>No Brainer</h4>
+          <div className="rating">
+            <i className="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star" aria-hidden="true"></i>
+            <i className="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+        <div className="col-4">
+          <div className="img">
+            <img src="diperoverload1.jpg" alt="Diaper Overload" />
+          </div>
+          <h4>Diaper Overload</h4>
+          <div className="rating">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+        <div className="col-4">
+          <div className="img">
+            <img src="bigshot.jpg" alt="Big Shot" />
+          </div>
+          <h4>Big Shot</h4>
+          <div className="rating">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-half-o"></i>
+            <i className="fa fa-star-o"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+        <div className="col-4">
+          <div className="img">
+            <img src="thedeepend.png" alt="The Deepend" />
+          </div>
+          <h4>The Deepend</h4>
+          <div className="rating">
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star"></i>
+            <i className="fa fa-star-half-o"></i>
+          </div>
+          <p>400.00</p>
+        </div>
+        {/* Add more latest product cards as needed */}
+      </div>
+    </div>
+  
+
+        {/* Add your latest product cards here */}
+      </div>
+    </div>
+
+  {/* Repeat similar blocks for other featured products */}
+
+
+      <div className="offer">
+        <div className="small-container">
+        <div className="row">
+          <div className="col-2">
+            <a href="product details.html">
+              <img src="nobrainer.jpg" className="offer-img" alt="No Brainer" />
+            </a>
+          </div>
+          <div className="col-2">
+            <p>Exclusively Available on Wimpy Kids Books Section</p>
+            <h1>No Brainer</h1>
+            <small>
+              "Up until now, middle school hasn’t exactly been a joyride for Greg Heffley. So when the town threatens to close the crumbling building, he’s not too broken up about it.
+              But when Greg realizes this means he’s going to be sent to a different school than his best friend, Rowley Jefferson, he changes his tune. Can Greg and his classmates save their school before it’s shuttered for good? Or is this the start of a whole new chapter for Greg?"
+            </small>
+            <a href="product details.html" className="btn">
+              Buy Now &#8594;
+            </a>
+          </div>
+        </div>
+
+          {/* Offer section */}
+          {/* Replace this section with your offer data */}
+        </div>
+      </div>
+
+      <div className="testimonial">
+        <div className="small-container">
+        <div className="row">
+          <div className="col-3">
+            <i className="fa fa-quote-left"></i>
+            <p>Where laughter and life lessons meet, making it an absolute must-read for all ages!</p>
+            <div className="rating">
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star-o"></i>
+            </div>
+            <img src="modi.jpeg" alt="Narendra Modi" />
+            <h3>Narendra Modi</h3>
+          </div>
+          <div className="col-3">
+            <i className="fa fa-quote-left"></i>
+            <p>A hilarious rollercoaster ride through the Heffley family's escapades that keeps you laughing till the very end!</p>
+            <div className="rating">
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star-o"></i>
+            </div>
+            <img src="amit.jpeg" alt="Amit Shah" />
+            <h3>Amit Shah</h3>
+          </div>
+          <div className="col-3">
+            <i className="fa fa-quote-left"></i>
+            <p>Greg Heffley's antics are relatable and side-splittingly funny, making this book an all-time favorite for kids and adults alike!</p>
+            <div className="rating">
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star"></i>
+              <i className="fa fa-star-o"></i>
+            </div>
+            <img src="nirmala.jpeg" alt="Nirmala Sitharaman" />
+            <h3>Nirmala Sitharaman</h3>
+          </div>
+        </div>
+    
+
+          {/* Testimonial section */}
+          {/* Replace this section with your testimonial data */}
+        </div>
+      </div>
+
+      <div className="brands">
+        <div className="small-container">
+          <div className="row">
+            <div className="col-5">
+              <img src="logo.png" alt="Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="footer-col-1">
+              <h3>Follow our Instagram</h3>
+              <p>Follow Wimpy Kid by reading all the editions.</p>
+              <img src="app-store.png" width="20%" alt="App Store" />
+              <img src="play-store.png" width="20%" alt="Play Store" />
+            </div>
+            <div className="footer-col-2">
+              <img src="" alt="Image" />
+              <p>Best Books for Children of all ages.</p>
+            </div>
+            <div className="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join us</li>
+              </ul>
+            </div>
+            <div className="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Youtube</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <p className="copyright">Copyright 2023 - Wimpy Kid</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+<Link to="/my-html-page.html">My HTML Page</Link>

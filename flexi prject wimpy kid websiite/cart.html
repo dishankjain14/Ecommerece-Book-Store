@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WIMPY KID</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Accenture Logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="cart.png" alt="cart" width="30px" height="30px" class="cart-icon"></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    <div class="container-cart">
+        <h1>Shopping Cart</h1>
+        <p>PRODUCT                     ---------                                 AMOUNT</p>
+        <div id="cart-items-container">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <br>
+        
+
+        
+        <!-- Add the Checkout button here -->
+        <a href="paymentgateway.html" id="checkout-btn">Checkout</a></button>
+    </div>
+    
+    
+    <!-- Include your JavaScript code here -->
+    <script>
+        // Initialize the cart array or retrieve from Local Storage
+        var cart = JSON.parse(localStorage.getItem('cart')) || [];
+        
+        // Function to display cart items on the cart page
+        function displayCartItemsOnCartPage() {
+            var cartItemsContainer = document.getElementById('cart-items-container');
+        
+            if (cart.length > 0) {
+                cartItemsContainer.innerHTML = ''; // Clear previous items
+        
+                var totalPrice = 0;
+        
+                cart.forEach(function (item) {
+                    var cartItemDiv = document.createElement('div');
+                    cartItemDiv.textContent = item.name + ' - $' + item.price.toFixed(2);
+                    cartItemsContainer.appendChild(cartItemDiv);
+                    totalPrice += item.price;
+                });
+        
+                // Display the total price on the cart page
+                cartItemsContainer.innerHTML += '<div>Total: $' + totalPrice.toFixed(2) + '</div>';
+            } else {
+                cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
+            }
+        }
+        
+        // Function to handle the checkout process
+        function checkout() {
+            // Display a "Thank you" prompt
+            alert('Thank you for your purchase!');
+
+            // Clear the cart array
+            cart = [];
+
+            // Store the empty cart data in Local Storage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Update the cart modal to reflect the empty cart
+            displayCartItems();
+
+            // Display cart items on the cart page
+            displayCartItemsOnCartPage();
+        }
+
+        // Initial display of cart items on the cart page when the page loads
+        displayCartItemsOnCartPage();
+
+        // Add an event listener to the checkout button
+        document.getElementById('checkout-btn').addEventListener('click', checkout);
+
+        
+    </script>
+
+    <br>
+    <br>
+    <br>
+    
+    
+   
+    
+ <!----------footer----------->
+
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Follow our instagram</h3>
+                <p>Follow Wimpy Kid by reading all the editions.</p>
+                <img src="app-store.png" width="20%">
+                <img src="play-store.png" width="20%">
+            </div>
+            <div class="footer-col-2">
+                <img src="">
+                <p>Best Books for Children of all ages.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join us</li>
+                </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                                <li>Instagram</a></li>
+                                <!-- Other list items here -->
+                            </ul>
+                    
+                </div>
+                  </div>
+                  <hr>
+                  <p class="copyright">Copyright 2023 - Wimpy Kid</p>
+        </div>
+    </div>
+
+    <!------js for toggle menu------>
+    <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
